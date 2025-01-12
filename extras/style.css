@@ -23,27 +23,8 @@ body  {
 	margin:0px;
 }
 
-#noScript {
-	background-color:var(--lemonchiffon);
-	font-size:10pt; font-weight:bold;
-	text-align:center;
-	border-bottom:2px groove black;
-	padding:5px;
-	width:100%; position:fixed; top:0px;
-	z-index:100;
-}
-
-.alert {
-	display:none; /*block/none*/
-	background-color:var(--gray-15); color:var(--gray-99);
-	font-weight:bold;
-	text-align:center;
-	border-bottom:2px solid var(--gray-99);
-	padding:10px;
-}
-
 #container {
-	width:994px; /*1024px, change #content to 800px*/
+	width:994px;
 	background:url('../img/header-bg1.png') no-repeat;
 	text-align:left;
 	margin:0px auto; /*center element*/
@@ -51,7 +32,7 @@ body  {
 
 /*Header section BEGIN*/
 #header  {
-	/*background-color:#4483b6;*/color:var(--gray-99); /*steelblue2*/
+	color:var(--gray-99);
 	padding:5px 10px;
 }
 
@@ -79,12 +60,6 @@ body  {
 	padding:0 1%;
 }
 
-.small {
-	font-size:10pt;
-	margin:0px;
-}
-.small2 {font-size:10pt; font-style:italic;}
-
 /*Footer section BEGIN*/
 #footer {
 	background-color:var(--gray-15); color:var(--gray-99);
@@ -94,9 +69,6 @@ body  {
 	padding:1px 1%;
 	box-shadow:2px 2px 10px var(--gray-15);
 }
-
-#footer a:link, #footer a:visited {color:var(--gray-99); text-decoration:none;}
-#footer a:hover, #footer a:active {color:var(--gray-99); text-decoration:underline;}
 
 /*All sections BEGIN*/
 .icons {
@@ -113,21 +85,6 @@ h1 {margin:15px 0px;}
 h2 {margin:15px 0px 10px 0px;}
 h3 {margin:15px 0px 10px 0px;}
 ul, ol {margin:15px 0px; padding-left:25px;}
-	#content ul, #content ol {display:flow-root} /*Prevent list bullets from being blocked by #articleHeadAd.*/
-blockquote {
-	background:transparent url('../img/quote-left.png') no-repeat scroll;
-	margin:15px 25px 15px 0px;
-	padding-left:25px;
-	display:flow-root /*Prevent list bullets from being blocked by #articleHeadAd.*/
-}
-	blockquote p {margin:0}
-code {
-	background-color:var(--gray-94);
-	font-family:'Courier New',monospace; font-size:12pt;
-	/*padding:2px 5px; Was adding an offset to the first code line w/ Prism.*/
-	word-wrap:break-word;
-}
-ol.code {margin-top:-15px} /*Used in line-numbered code blocks*/
 img {vertical-align:text-top; border:0px solid var(--gray-15);}
 
 a:link, a:visited {color:var(--gray-15); text-decoration:none;}
@@ -144,11 +101,6 @@ a:hover, a:active {color:var(--gray-15); text-decoration:underline;}
 .green {color:var(--green)}
 .blue {color:blue}
 .magenta {color:darkmagenta}
-
-.font12 {font-size:12pt}
-
-.pad5 th, .pad5 td  {padding:5px} /*to replace Cellpadding attribute*/
-.pad10 th, .pad10 td {padding:10px}
 
 @media only screen and (max-width:994px) {
 	#container {
